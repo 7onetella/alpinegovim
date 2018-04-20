@@ -1,0 +1,20 @@
+#!/bin/sh
+#set -x
+
+VERSION=1.0.0
+
+if [ "$1" !=  "" ]; then
+   VERSION=$1
+fi
+
+OUTPUT="/dev/stdout"
+
+if [ "$4" = "quiet" ]; then
+    OUTPUT="/dev/null"
+fi
+
+docker build -t 7onetella/alpinegovim . > ${OUTPUT}
+
+docker tag 7onetella/alpinegovim:latest 7onetella/alpinegovim:${VERSION} > ${OUTPUT}
+
+docker push 7onetella/alpinegovim:${VERSION}
