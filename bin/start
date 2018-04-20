@@ -5,4 +5,4 @@ if [ "$1" == "" ]; then
     exit 1
 fi
 
-docker run --name alpinegovim -d -e CREDENTIAL="${1}" -p 9000:9000 alpinegovim:latest
+docker run --name dev-alpinegovim -d -e CREDENTIAL="${1}" -p 9000:9000 7onetella/alpinegovim:latest
