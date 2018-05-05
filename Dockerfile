@@ -10,7 +10,7 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 WORKDIR $GOPATH
 
 RUN apk add --update \
-  && apk add --no-cache git openssh ca-certificates curl zsh sed vim ctags python py-pip nodejs nodejs-npm \
+  && apk add --no-cache git openssh ca-certificates curl zsh sed vim ctags python py-pip nodejs nodejs-npm htop \
   && rm -rf /var/cache/apk/*
 
 RUN sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd \
