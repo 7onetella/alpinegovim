@@ -16,7 +16,7 @@ Access the terminal on your browser by hitting http://localhost:9000
 * username: `admin`
 * password: `1234`
 
-I ran htop in the terminal session in the browser
+shown here: terminal session in a browser
 <p align="center">
   <img src="./screenshots/terminal.png" alt="access the terminal as a web application" width="654" height="450">
 </p>
