@@ -9,7 +9,7 @@
 
 ### How to run this docker image
 ```sh
-$ docker run --name alpinegovim -d -e CREDENTIAL="admin:1234" -p 9000:9000 7onetella/alpinegovim:latest
+$ docker run --name alpinegovim -d -e CREDENTIAL="admin:1234" -p 9000:9000 7onetella/alpinegovim:1.0.1
 ```
 Access the terminal on your browser by hitting http://localhost:9000  
 
